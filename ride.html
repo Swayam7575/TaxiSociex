@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDE PAGE</title>
+    <style>
+        :root {
+            --yellow: #EBB14D;
+            --darkblue: #3A3C6C;
+            --light: #cfd8ef;
+            --white: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui;
+        }
+
+        .hero {
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(rbga(0, 10, 0, 0.4), rgba(165, 39, 39, 0.13));
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            background: linear-gradient(var(--light), #fff);
+        }
+
+        .form-box {
+            width: 380px;
+            height: 480px;
+            position: relative;
+            margin: 6% auto;
+            background: #fff;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .button-box {
+            width: 370px;
+            margin: 50px auto;
+            box-shadow: 0 0 20px 9px #ff61241f;
+            background: linear-gradient(to right, #ff105f, #ffad06);
+            border-radius: 30px;
+            position: absolute;
+            text-align: center;
+        }
+
+        .toggle-btn {
+            padding: 10px 40px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+            font-size: 20px;        
+        }   
+
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(to right, #ff105f, #ffad06);
+            border-radius: 30px;
+
+        }
+
+        .input-group {
+            top: 100px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+
+        .input-feild {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: linear-gradient(to right, #ff105f, #ffad06);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+        }
+
+        .inputbutton{
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            color: rgba(99, 99, 99, 0.925);
+            outline: none;
+            background: transparent;
+            font: system-ui;
+        }
+        
+
+        .check-box {
+            margin: 20px 20px 10px 0;
+        }
+
+        span {
+            color: #777;
+            font-size: 12px;
+            bottom: 47px;
+            position: absolute;
+        }
+
+        #login {
+            left: 50px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn">RIDE</button>
+            <form id="login" class="input-group">
+                <input type="text" class="input-feild" placeholder="Start Point" required>
+                <input type="text" class="input-feild" placeholder="End Point" required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          
+        
+        </div>
+
+    </div>
+
+    
+    </script>
+</body>
+
+</html>
